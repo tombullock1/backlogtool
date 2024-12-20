@@ -1,15 +1,13 @@
 {
   "files": {
-    "main.css": "/backlogtool/static/css/main.8a2ffb5a.css",
-    "main.js": "/backlogtool/static/js/main.23b1b095.js",
-    "static/js/156.5ae96d17.chunk.js": "/backlogtool/static/js/156.5ae96d17.chunk.js",
-    "index.html": "/backlogtool/index.html",
-    "main.8a2ffb5a.css.map": "/backlogtool/static/css/main.8a2ffb5a.css.map",
-    "main.23b1b095.js.map": "/backlogtool/static/js/main.23b1b095.js.map",
-    "156.5ae96d17.chunk.js.map": "/backlogtool/static/js/156.5ae96d17.chunk.js.map"
+    "main.css": "/backlogtool1/static/css/main.ca57846c.css",
+    "main.js": "/backlogtool1/static/js/main.7693e084.js",
+    "index.html": "/backlogtool1/index.html",
+    "main.ca57846c.css.map": "/backlogtool1/static/css/main.ca57846c.css.map",
+    "main.7693e084.js.map": "/backlogtool1/static/js/main.7693e084.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a2ffb5a.css",
-    "static/js/main.23b1b095.js"
+    "static/css/main.ca57846c.css",
+    "static/js/main.7693e084.js"
   ]
 }

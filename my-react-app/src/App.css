@@ -1,0 +1,64 @@
+/* Add these animation styles to your existing App.css */
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.load-card {
+  animation: fadeSlideIn 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.load-card.fade-exit {
+  animation: fadeSlideOut 0.3s ease-out;
+}
+
+/* Add a container for the loads list with proper positioning */
+.loads-list {
+  position: relative;
+  min-height: 200px; /* Adjust based on your needs */
+}
+
+/* Add styles for the loading state */
+.loads-loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #666;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.loads-loading .loading-spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} 

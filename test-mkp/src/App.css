@@ -1,0 +1,263 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.marketplace {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.tabs {
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.tabs button.active {
+  border-bottom: 2px solid #ff6600;
+  color: #ff6600;
+}
+
+.filters {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.filter-group {
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+
+.filter-group input {
+  padding: 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  min-width: 200px;
+}
+
+.filter-group select {
+  padding: 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.save-filters, .clear-filters {
+  padding: 8px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+}
+
+.load-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: white;
+}
+
+.load-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.route {
+  font-weight: bold;
+}
+
+.load-details {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.detail-column h4 {
+  margin: 0 0 10px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.price {
+  text-align: right;
+}
+
+.book-now {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.complete-text {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.place-bid {
+  background: white;
+  border: 1px solid #ff6600;
+  color: #ff6600;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.date, .time {
+  color: #666;
+  font-size: 14px;
+}
+
+.no-results {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  background: #f5f5f5;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.date-picker-button {
+  padding: 8px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+  min-width: 120px;
+  position: relative;
+}
+
+.date-picker-button:hover {
+  background: #f5f5f5;
+}
+
+.alternatives {
+  margin-top: 20px;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 15px;
+}
+
+.alternatives-toggle {
+  background: none;
+  border: none;
+  color: #ff6600;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0;
+}
+
+.alternatives-toggle.expanded {
+  margin-bottom: 15px;
+}
+
+.alternatives-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.alternative-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.alternative-details {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.alternative-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.book-alternative, .bid-alternative {
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.book-alternative {
+  background: #ff6600;
+  color: white;
+  border: none;
+}
+
+.bid-alternative {
+  background: white;
+  border: 1px solid #ff6600;
+  color: #ff6600;
+}
+
+.alternative-time .time {
+  font-weight: 500;
+}
+
+.alternative-time .price {
+  color: #666;
+}
